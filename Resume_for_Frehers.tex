@@ -42,20 +42,103 @@
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Experience}
+\begin{rSection}{Work Experience}
 %--copy and paste this region  if you need more--
 
-{\bf Android Developer at Piksal JSC} \hfill {\em 2015 - 2016}\\
-- Develop variable application and game on Android. Work with native Java Android, React Native, Unity Game Engine. 
+{\bf \underline{Android Developer at Piksal JSC}} \hfill {\em 2015 - 2016}\\
+- Develop variable applications and games on Android. Work with native Java Android, React Native, and Unity Game Engine. 
 
-{\bf Backend Developer at ShareCarForAds.com} \hfill {\em 2016 - 2017}\\
-- Work as backend developer. Use nodejs. Work with framework koajs.
+{\bf \underline{Backend Developer at ShareCarForAds.com}} \hfill {\em 2016 - 2017}\\
+- I worked as backend developer. I built backend service to help with data ingestion from IoT devices. 
 
-{\bf Data Scientist at VNG } \hfill {\em 2017 - now}
-\\ - Work on variety of machine learning problem in predicting target attribute (age, whether that person is X,). I participated in both modeling and building big data pipeline. 
-\\ - Features Store - a centralize platform to store features of variety project for reusable. I worked in backend and ETL process of storing/retrieving feature. 
-\\ - Lookalike Audience - Find new audience similar to input audience based on variable traits. I am main contribute, worked in researching/modeling, data pipeline and backend. 
-\\ - AutoML - A machine learning system, integrate with feature store, that automate the process of optimizing (ads) campaigns, designed to operate with minimal human intervention. I contributed in backend, data pipeline, model deployment.
+{\bf \underline{Data Scientist at VNG}} \hfill {\em 2017 - now}
+% \\ - Work on variety of machine learning problem in predicting target attribute. I participated in both modeling and (big) data pipeline. 
+% \\ - Features Store - A centralize system to store features of variety project for reusable. I worked in backend and ETL process of storing/retrieving feature. 
+% \\ - Lookalike Audience - Find new audience similar to input audience based on variable traits. I am main contribute, worked in researching/modeling, data pipeline and backend. 
+% \\ - AutoML - A machine learning system, integrate with feature store, that automate the process of optimizing (ads) campaigns, designed to operate with minimal human intervention. I contributed in backend, data pipeline, model deployment.
+
+\textbf{Spam Filter} \textit{(2017-2018)}
+
+\begin{itemize}
+    \item A spam filter for public comment on news, official page.
+    \item Techstack: Python NLP - scikit-learn and gensim
+    \item Impact: The model performance was satisfy requirement and eliminate the need of manual moderation. However, retraining with new manually data weekly is required to keep up with spammer creative
+\end{itemize}
+
+
+
+
+\textbf{Chatbot for Worldcup} \textit{(2017-2018)}
+
+\begin{itemize}
+    \item An information retrieval chatbot that help end-user (Zalo user) get useful information about World Cup 2018.
+    \item This chatbot is not intelligent, and have none of chatgpt inside. The chatbot is built using multiple simple machine learning model, combine with clever craft logic and rich hand-crafted knowledge-based.
+    \item \textit{Techstack}: 
+    \begin{itemize}
+            \item Backend : Handling logic - Java servlet
+            \item Database: As knowledge base - Neo4j (graph database)
+            \item Web Crawler: get real time information such as goal, match result, bet ratio on 188bet - Python (scrapy)
+    \end{itemize}
+    \item \textit{Impact}: The chatbot was well received by user as well as leadership, and was heavily promoted by media/event team. Rack in hundreds of interactions in total. The most used features is retrieve current bet ratio from 188bet.
+\end{itemize}
+
+
+\textbf{Feature Store} \textit{(2019-2023)}
+\begin{itemize}
+    \item A centralize system to store features of variety project for reusable.
+    \item \textit{Techstack}:
+    \begin{itemize}
+        \item Backend: Handling logic - Java Servlet
+        \item Data Pipeline and Big Data: data extraction, transformation and ingestion. I use Python - spotify/luigi as scheduler. Scala Spark to do data transformation. Data is storage in Hadoop with Kerberos authentication.
+        \item Database: Use as operational database for the system and store metadata.
+        \item Devops: git, docker, gitlab CI
+    \end{itemize} 
+    \item \textit{Impact}: The project allow data scientist work in difference project to reuse works of each others, save time on feature engineering similar features. Feature Store is integrate into some of my later projects.
+\end{itemize}
+
+
+\textbf{Pregnant Prediction } \textit{(2021-2022)}
+\begin{itemize}
+    \item Predict whether a target is pregnant. The researching and modeling process were done with jupyter notebook. Then, I built big data pipeline with Spark to run in production.
+    \item \textit{Techstack}:
+    \begin{itemize}
+        \item Modeling: Python - lightgbm, numpy, pandas, matplotlib, pyspark
+        \item Data Pipeline and Big Data: Run prediction on all Zalo user, on monthly basic, then load into feature store. Python - luigi scheduling, Scala (Spark), Hadoop, Kerberos
+        \item Devops: git, docker gitlab CI
+    \end{itemize} 
+    \item \textit{Impact}: Result is use as feature for Milk Demand ads targeting, increase CR by 10-15%.
+\end{itemize}
+
+\textbf{Lookalike} \textit{(2021-2022)}
+\begin{itemize}
+    \item Build lookalike audience with custom filter conditions from given audience. The project help user expanse their exist audiences.
+    \item \textit{Techstack}:
+    \begin{itemize}
+        \item Modeling: Python - lightgbm, numpy, pandas, matplotlib, pyspark
+        \item Data Pipeline and Big Data: Retrain model monthly,  model inference with all Zalo user. Python - luigi scheduling, Scala (Spark), Hadoop, Kerberos
+        \item Backend: receive inference requests from multiple platform. Java - Spring Boot
+        \item Database: use as operational database, to store user requests and its status. Mongodb.
+        \item Devops: git, docker gitlab CI
+    \end{itemize} 
+    \item \textit{Impact}: About 30-40 lookalike audiences generated monthly.
+\end{itemize}
+
+
+\textbf{AutoML} \textit{(2022-2024)}
+\begin{itemize}
+    \item A machine learning system, integrate with feature store, that automate the process of optimizing (ads) campaigns, designed to operate with minimal human intervention.
+    \item \textit{Techstack}:
+    \begin{itemize}
+        \item Modeling: Python - lightgbm, autogluon, numpy, pandas, matplotlib, pyspark
+        \item Visualize and reporting: Python - pandas, numpy, matplotlib, plotly, papermill, jupyter notebook
+        \item Data Pipeline and Big Data: Retrain model monthly,  model inference with all Zalo user. Python - luigi scheduling, Scala (Spark), Hadoop, Kerberos
+        \item Backend: receive inference requests from multiple platform. Java Servlet
+        \item Database: use as operational database, Mongodb, MySql
+        \item Devops: git, docker, gitlab CI
+    \end{itemize} 
+    \item \textit{Impact}: CR, CTR of ads campaigns increase from 25\% to 50\%. 
+    \item Awarded The Outstanding Project in 2023.
+\end{itemize}
 
 %--copy and paste this region  if you need more--
 \end{rSection}
@@ -92,13 +175,13 @@
 {\bf Programming Languages and Frameworks }
 \\ - Comfortable with Java, Python, shell script
 \\ - Data Science: Data transformation and modeling with Numpy, Pandas, Scikit-learn, lightgbm ,Autogluon
-\\ - Big Data: Experienced in building ETL pipeline with Apache Hadoop, Apache Spark and Spotify Luigi.
-\\ - Deeplearning: Work with Pytorch. Basic knowledge on NLP (Bachelor degree research) and Computer Vision (master degree research)
-\\ - Backend: Build microservice with SpringBoot, Java Servlet, flask, fastapi, RPC (Apache Thrift, gRPC), rest API. 
-\\ - Database: Basic knowledge of MySQL, MongoDB, Neo4j. 
-\\ - Devops: Basic knowledge, worked with git, docker, and gitlab CI.
+\\ - Big Data: Experienced in building data pipeline with Apache Hadoop, Apache Spark and Luigi (Spotify).
+\\ - Deeplearning: Worked with Pytorch. I did some research on NLP (Bachelor degree research) and Computer Vision (master degree research)
+\\ - Backend: Build microservice with SpringBoot, Java Servlet, Python flask, Python fastapi, RPC (Apache Thrift, gRPC), REST API. 
+\\ - Database: Worked with MySQL, MongoDB, Neo4j. 
+\\ - Devops: Worked with git, docker/docker-compose, and Gitlab CI. 
 
-\newpage
+% \newpage
 
 {\bf Coursera certificate }
 
