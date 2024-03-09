@@ -43,13 +43,15 @@
 
 \begin{rSection}{Skills}
 {\bf Programming Languages and Frameworks }
-\\ - Comfortable with Java, Python, shell script
+\\ - Languages: Java, Python,  Bash shell (6+ years)
 \\ - Data Science: Data transformation and modeling with Numpy, Pandas, Scikit-learn, lightgbm ,Autogluon
-\\ - Big Data: Experienced in building data pipeline with Apache Hadoop, Apache Spark and Luigi (Spotify).
-\\ - Deep learning: Worked with Pytorch. I did some research on NLP (Bachelor degree research) and Computer Vision (master degree research). Read my research papers for more details.
-\\ - Backend: Build microservice with SpringBoot, Java Servlet, Python flask, Python fastapi, RPC (Apache Thrift, gRPC), REST API. 
-\\ - Database: Worked with MySQL, MongoDB, Neo4j. 
-\\ - Devops: Worked with git, docker/docker-compose, and Gitlab CI. 
+\\ - Big Data: Experienced in building data pipeline with Apache Hadoop, Apache Spark. Build data workflow with Luigi (Spotify), Airflow.
+\\ - Visualize and report: Jupyter Notebook, matplotlib and plotly, papermill
+\\ - Deep learning: Worked with Pytorch, Tensorflow. 
+\\ - Focus on NLP (Bachelor) and Computer Vision (Master). 
+\\ - Backend: Setup microservice with SpringBoot, Java Servlet, Python Flask, Python fastapi, RPC (Apache Thrift, gRPC), REST API. 
+\\ - Database: MySQL, PostgreSQL, MongoDB, Neo4j. 
+\\ - Devops: Git, Gitlab CI, Docker.
 \end{rSection}
 
 
@@ -60,72 +62,72 @@
 \begin{rSection}{Work Experience}
 %--copy and paste this region  if you need more--
 
-{\bf \underline{Android Developer at Piksal JSC}} \hfill {\em 2015 - 2016}\\
-- Develop variable applications and games on Android. Work with native Java Android, React Native, and Unity Game Engine. 
-
-{\bf \underline{Backend Developer at ShareCarForAds.com}} \hfill {\em 2016 - 2017}\\
-- I worked as backend developer. I built backend service to help with data ingestion from IoT devices. 
-
-{\bf \underline{Data Scientist at VNG}} \hfill {\em 2017 - now}
+{\bf \underline{VNG Corporation}} \hfill {\em 2017 - now}
+\\Senior Data Scientist
 % \\ - Work on variety of machine learning problem in predicting target attribute. I participated in both modeling and (big) data pipeline. 
 % \\ - Features Store - A centralize system to store features of variety project for reusable. I worked in backend and ETL process of storing/retrieving feature. 
 % \\ - Lookalike Audience - Find new audience similar to input audience based on variable traits. I am main contribute, worked in researching/modeling, data pipeline and backend. 
 % \\ - AutoML - A machine learning system, integrate with feature store, that automate the process of optimizing (ads) campaigns, designed to operate with minimal human intervention. I contributed in backend, data pipeline, model deployment.
 
-\textbf{Spam Filter} \textit{(2017-2018)}
+\textbf{Spam Filter} \hfill {\em \textit{2017 - 2018}
 
 \begin{itemize}
     \item A spam filter for public comment on news, official page.
     \item \textit{Techstack}: Python NLP - scikit-learn and gensim
-    \item \textit{Impact}: The model performance was satisfy requirement and eliminate the need of manual moderation. However, retraining with new manually data weekly is required to keep up with change in spam pattern.
+    \item \textit{Impact}: Eliminate the need of manual moderation, reducing cost of operation
 \end{itemize}
 
 
 
 
-\textbf{Chatbot for Worldcup} \textit{(2017-2018)}
+\textbf{Chatbot for Worldcup} \hfill {\em \textit{2017 - 2018}
 
 \begin{itemize}
-    \item An information retrieval chatbot that help end-user (Zalo user) get useful information about World Cup 2018.
-    \item This chatbot is not intelligent, and has none of chatgpt inside. The chatbot is built using multiple simple machine learning model, combine with clever-crafted logic and rich hand-crafted knowledge base.
+    \item A chatbot that help Zalo users get useful information during the height of World Cup 2018. Increasing user interaction with Zalo platform without relying on operation team.
+    \item Built based on multiple Machine Learning model, utilizing hand-crafted knowledge and rule-based logic.
     \item \textit{Techstack}: 
     \begin{itemize}
             \item NLP: Sentence classification, NER, and typo correction. Python (gensim, scikit-learn)
-            \item Backend : Handling logic - Java servlet
-            \item Database: As knowledge base - Neo4j (graph database)
-            \item Web Crawler: get real time information such as goal, match result, bet ratio on 188bet - Python (scrapy)
+            \item Backend : Java servlet
+            \item Database: Neo4j (graph database)
+            \item Web Crawler: real time information acquisition such as goal, match result, bet ratio - Python scrappy.
     \end{itemize}
-    \item \textit{Impact}: The chatbot was well received by users as well as leadership, and was heavily promoted by media/event team, rack in hundreds of interactions in total. The most used feature is retrieve current bet ratio from 188bet.
+    \item \textit{Impact}: The chatbot was well received by users as well as leadership team, resulting it and got heavily promoted by media/event team to public. Traffic to Zalo platform got increased by 50\%.
 \end{itemize}
 
-
-\textbf{Feature Store} \textit{(2019-2023)}
+\newpage
+\textbf{Feature Store} \hfill {\em \textit{2019 - 2023}
 \begin{itemize}
-    \item A centralized system to store features of variety project for reusable.
+    \item An initiation to centralize features across different teams for storing, processing, and accessing commonly used features, promoting feature reusability, feature discovery.
     \item \textit{Techstack}:
     \begin{itemize}
-        \item Backend: Handling logic - Java Servlet
-        \item Data Pipeline and Big Data: data extraction, transformation and ingestion. I use Python - spotify/luigi as scheduler. Scala Spark to do data transformation. Data is stored in Hadoop with Kerberos authentication.
-        \item Database: Use as operational database for the system and store metadata.
-        \item Devops: git, docker, gitlab CI
+        \item Backend: Java Servlet
+        \item Data Pipeline and Big Data: Perform data extraction, transformation and ingestion.
+        \begin{itemize}
+            \item Scheduler: Python + Luigi 
+            \item Data transformation: Scala Spark 
+            \item Data Storage: Hadoop with Kerberos authentication.
+        \end{itemize}
+        \item MySQL as operational database and feature metadata.
+        \item Git, Docker, Gitlab CI
     \end{itemize} 
-    \item \textit{Impact}: The project allow data scientist work in difference project to reuse works of each others, save time on feature engineering similar features. Feature Store is integrate into some of my later projects.
+    \item \textit{Impact}: Drastically reduce time spent on feature engineering. Feature Store has become standard integration for Data Insight team. 
 \end{itemize}
 
 
-\textbf{Pregnant Prediction } \textit{(2021-2022)}
+\textbf{Pregnancy Prediction } \hfill {\em \textit{2021 - 2022}
 \begin{itemize}
-    \item Predict whether a target is pregnant. The researching and modeling process were done with jupyter notebook. Then, I built big data pipeline with Spark to run in production.
+    \item Predict whether a woman is pregnant. Served as analysis feature for downstream ads targeting campaign.
     \item \textit{Techstack}:
     \begin{itemize}
         \item Modeling: Python - lightgbm, numpy, pandas, matplotlib, pyspark
-        \item Data Pipeline and Big Data: Run prediction on all Zalo user, on monthly basis, then load into feature store. Python - luigi scheduler, Scala (Spark), Hadoop, Kerberos
+        \item Data Pipeline and Big Data: Run prediction on all Zalo user, then load into feature store. Python + luigi as scheduler, Scala (Spark), Hadoop for big data processing.
         \item Devops: git, docker gitlab CI
     \end{itemize} 
-    \item \textit{Impact}: Result is use as feature for Milk Demand ads targeting, increase CR by 10-15%.
+    \item \textit{Impact}: Use as feature for Milk Demand ads targeting, increase CR by 10-15\%.
 \end{itemize}
 
-\textbf{Lookalike} \textit{(2021-2022)}
+\textbf{Lookalike} \hfill {\em \textit{2021 - 2022}
 \begin{itemize}
     \item Build lookalike audience with custom filter conditions from given audience. The project help user expands their exist audiences.
     \item \textit{Techstack}:
@@ -140,7 +142,7 @@
 \end{itemize}
 
 
-\textbf{AutoML} \textit{(2022-2024)}
+\textbf{AutoML} \hfill {\em \textit{2022 - 2024}
 \begin{itemize}
     \item A machine learning system, integrate with feature store, that automate the process of optimizing (ads) campaigns, designed to operate with minimal human intervention.
     \item \textit{Techstack}:
@@ -156,23 +158,27 @@
     \item Awarded The Outstanding Project in 2023.
 \end{itemize}
 
+{\bf \underline{Backend Developer at ShareCarForAds.com}} \hfill {\em 2016 - 2017}\\
+- I worked as backend developer. I built backend service to help with data ingestion from IoT devices. 
+
+{\bf \underline{Android Developer at Piksal JSC}} \hfill {\em 2015 - 2016}\\
+- Develop variable applications and games on Android. Work with native Java Android, React Native, and Unity Game Engine. 
+
+
 
 \begin{rSection}{Education}
 %--copy and paste this region  if you need more--
-{\bf VNUHCM - University of Science} \hfill {\em 2013 - 2017 } 
-\\ Bachelor of Computer Science % \hfill { GPA: your gpa }
-%--copy and paste this region  if you need more--
-
 %--copy and paste this region  if you need more--
 {\bf VNUHCM - University of Science} \hfill {\em 2019 - 2021 } 
-\\ Master of Science in Information System % \hfill { GPA: your gpa }
+\\ Master of Science in Information System  \hfill { GPA: 3.8/4.0 }
+
+{\bf VNUHCM - University of Science} \hfill {\em 2013 - 2017 } 
+\\ Bachelor of Computer Science  \hfill { GPA: 3.8/4.0 }
+%--copy and paste this region  if you need more--
+
 
 %--copy and paste this region  if you need more--
 
-\end{rSection}
-
-
-%--copy and paste this region  if you need more--
 \end{rSection}
 %--------------------------------------------------------------------------------
 %    PROJECTS
@@ -182,14 +188,12 @@
 % {\bf Title of the project}{, institution associated with it} \hfill {\em start date- end date}\\
 % description of the project\\\\
 %--copy and paste this region  if you need more--
-
-2017 - Combining Convolution and Recursive Neural Networks for Sentiment Analysis (\href{https://dl.acm.org/doi/abs/10.1145/3155133.3155158}{link}  )
-(\href{https://github.com/ttpro1995/soICT2017/releases/tag/v1.1}{full-text})
-
 2020 - Lightweight solution to background noise in crowd counting 
 (\href{https://ieeexplore.ieee.org/document/9335834}{link}  )
 (\href{https://github.com/ttpro1995/NICS2020_paper/releases/tag/v1}{full-text})
 
+2017 - Combining Convolution and Recursive Neural Networks for Sentiment Analysis (\href{https://dl.acm.org/doi/abs/10.1145/3155133.3155158}{link}  )
+(\href{https://github.com/ttpro1995/soICT2017/releases/tag/v1.1}{full-text})
 \end{rSection}
 %--------------------------------------------------------------------------------
 %    ACTIVITIES
