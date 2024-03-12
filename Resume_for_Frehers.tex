@@ -68,34 +68,51 @@
 % \\ - Features Store - A centralize system to store features of variety project for reusable. I worked in backend and ETL process of storing/retrieving feature. 
 % \\ - Lookalike Audience - Find new audience similar to input audience based on variable traits. I am main contribute, worked in researching/modeling, data pipeline and backend. 
 % \\ - AutoML - A machine learning system, integrate with feature store, that automate the process of optimizing (ads) campaigns, designed to operate with minimal human intervention. I contributed in backend, data pipeline, model deployment.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textbf{Spam Filter} \hfill {\em \textit{2017 - 2018}}
-
+\textbf{AutoML} \hfill {\em \textit{2022 - 2024}}
 \begin{itemize}
-    \item A spam filter for public comment on news, official page.
-    \item \textit{Techstack}: Python NLP - scikit-learn and gensim
-    \item \textit{Impact}: Eliminate the need of manual moderation, reducing cost of operation
-\end{itemize}
-
-
-
-
-\textbf{Chatbot for Worldcup} \hfill {\em \textit{2017 - 2018}}
-
-\begin{itemize}
-    \item A chatbot that help Zalo users get useful information during the height of World Cup 2018. Increasing user interaction with Zalo platform without relying on operation team.
-    \item Built based on multiple Machine Learning model, utilizing hand-crafted knowledge and rule-based logic.
-    \item \textit{Techstack}: 
+    \item A machine learning system, integrate with feature store, that automate the process of optimizing (ads) campaigns, designed to operate with minimal human intervention.
+    \item \textit{Techstack}:
     \begin{itemize}
-            \item NLP: Sentence classification, NER, and typo correction. Python (gensim, scikit-learn)
-            \item Backend : Java servlet
-            \item Database: Neo4j (graph database)
-            \item Web Crawler: real time information acquisition such as goal, match result, bet ratio - Python scrappy.
-    \end{itemize}
-    \item \textit{Impact}: The chatbot was well received by users as well as leadership team, resulting it and got heavily promoted by media/event team to public. Traffic to Zalo platform got increased by 50\%.
+        \item Modeling: Python - lightgbm, autogluon, numpy, pandas, matplotlib, pyspark
+        \item Visualize and reporting: Python - pandas, numpy, matplotlib, plotly, papermill, jupyter notebook
+        \item Data Pipeline and Big Data: Retrain model monthly,  model inference with all Zalo user. Python - luigi scheduling, Scala (Spark), Hadoop, Kerberos
+        \item Backend: receive inference requests from multiple platform. Java Servlet
+        \item Database: use as operational database, Mongodb, MySql
+        \item Devops: git, docker, gitlab CI
+    \end{itemize} 
+    \item \textit{Impact}: CR, CTR of ads campaigns increase from 25\% to 50\%. 
+    \item Awarded The Outstanding Project in 2023.
 \end{itemize}
 
-\newpage
+
+\textbf{Lookalike} \hfill {\em \textit{2021 - 2022}}
+\begin{itemize}
+    \item Build lookalike audience with custom filter conditions from given audience. The project help user expands their exist audiences.
+    \item \textit{Techstack}:
+    \begin{itemize}
+        \item Modeling: Python - lightgbm, numpy, pandas, matplotlib, pyspark
+        \item Data Pipeline and Big Data: Retrain model monthly,  model inference with all Zalo user. Python - luigi scheduler, Scala (Spark), Hadoop, Kerberos
+        \item Backend: receive inference requests from multiple platform. Java - Spring Boot
+        \item Database: use as operational database, to store user requests and its status. Mongodb.
+        \item Devops: git, docker gitlab CI
+    \end{itemize} 
+    \item \textit{Impact}: About 30-40 lookalike audiences generated monthly.
+\end{itemize}
+
+\textbf{Pregnancy Prediction } \hfill {\em \textit{2021 - 2022}}
+\begin{itemize}
+    \item Predict whether a woman is pregnant. Served as analysis feature for downstream ads targeting campaign.
+    \item \textit{Techstack}:
+    \begin{itemize}
+        \item Modeling: Python - lightgbm, numpy, pandas, matplotlib, pyspark
+        \item Data Pipeline and Big Data: Run prediction on all Zalo user, then load into feature store. Python + luigi as scheduler, Scala (Spark), Hadoop for big data processing.
+        \item Devops: git, docker gitlab CI
+    \end{itemize} 
+    \item \textit{Impact}: Use as feature for Milk Demand ads targeting, increase CR by 10-15\%.
+\end{itemize}
+
 \textbf{Feature Store} \hfill {\em \textit{2019 - 2023}}
 \begin{itemize}
     \item An initiation to centralize features across different teams for storing, processing, and accessing commonly used features, promoting feature reusability, feature discovery.
@@ -115,48 +132,121 @@
 \end{itemize}
 
 
-\textbf{Pregnancy Prediction } \hfill {\em \textit{2021 - 2022}}
+\textbf{Chatbot for Worldcup} \hfill {\em \textit{2017 - 2018}}
+
 \begin{itemize}
-    \item Predict whether a woman is pregnant. Served as analysis feature for downstream ads targeting campaign.
-    \item \textit{Techstack}:
+    \item A chatbot that help Zalo users get useful information during the height of World Cup 2018. Increasing user interaction with Zalo platform without relying on operation team.
+    \item Built based on multiple Machine Learning model, utilizing hand-crafted knowledge and rule-based logic.
+    \item \textit{Techstack}: 
     \begin{itemize}
-        \item Modeling: Python - lightgbm, numpy, pandas, matplotlib, pyspark
-        \item Data Pipeline and Big Data: Run prediction on all Zalo user, then load into feature store. Python + luigi as scheduler, Scala (Spark), Hadoop for big data processing.
-        \item Devops: git, docker gitlab CI
-    \end{itemize} 
-    \item \textit{Impact}: Use as feature for Milk Demand ads targeting, increase CR by 10-15\%.
+            \item NLP: Sentence classification, NER, and typo correction. Python (gensim, scikit-learn)
+            \item Backend : Java servlet
+            \item Database: Neo4j (graph database)
+            \item Web Crawler: real time information acquisition such as goal, match result, bet ratio - Python scrappy.
+    \end{itemize}
+    \item \textit{Impact}: The chatbot was well received by users as well as leadership team, resulting it and got heavily promoted by media/event team to public. Traffic to Zalo platform got increased by 50\%.
 \end{itemize}
 
-\textbf{Lookalike} \hfill {\em \textit{2021 - 2022}}
+\textbf{Spam Filter} \hfill {\em \textit{2017 - 2018}}
+
 \begin{itemize}
-    \item Build lookalike audience with custom filter conditions from given audience. The project help user expands their exist audiences.
-    \item \textit{Techstack}:
-    \begin{itemize}
-        \item Modeling: Python - lightgbm, numpy, pandas, matplotlib, pyspark
-        \item Data Pipeline and Big Data: Retrain model monthly,  model inference with all Zalo user. Python - luigi scheduler, Scala (Spark), Hadoop, Kerberos
-        \item Backend: receive inference requests from multiple platform. Java - Spring Boot
-        \item Database: use as operational database, to store user requests and its status. Mongodb.
-        \item Devops: git, docker gitlab CI
-    \end{itemize} 
-    \item \textit{Impact}: About 30-40 lookalike audiences generated monthly.
+    \item A spam filter for public comment on news, official page.
+    \item \textit{Techstack}: Python NLP - scikit-learn and gensim
+    \item \textit{Impact}: Eliminate the need of manual moderation, reducing cost of operation
 \end{itemize}
 
 
-\textbf{AutoML} \hfill {\em \textit{2022 - 2024}}
-\begin{itemize}
-    \item A machine learning system, integrate with feature store, that automate the process of optimizing (ads) campaigns, designed to operate with minimal human intervention.
-    \item \textit{Techstack}:
-    \begin{itemize}
-        \item Modeling: Python - lightgbm, autogluon, numpy, pandas, matplotlib, pyspark
-        \item Visualize and reporting: Python - pandas, numpy, matplotlib, plotly, papermill, jupyter notebook
-        \item Data Pipeline and Big Data: Retrain model monthly,  model inference with all Zalo user. Python - luigi scheduling, Scala (Spark), Hadoop, Kerberos
-        \item Backend: receive inference requests from multiple platform. Java Servlet
-        \item Database: use as operational database, Mongodb, MySql
-        \item Devops: git, docker, gitlab CI
-    \end{itemize} 
-    \item \textit{Impact}: CR, CTR of ads campaigns increase from 25\% to 50\%. 
-    \item Awarded The Outstanding Project in 2023.
-\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \textbf{Spam Filter} \hfill {\em \textit{2017 - 2018}}
+
+% \begin{itemize}
+%     \item A spam filter for public comment on news, official page.
+%     \item \textit{Techstack}: Python NLP - scikit-learn and gensim
+%     \item \textit{Impact}: Eliminate the need of manual moderation, reducing cost of operation
+% \end{itemize}
+
+
+
+
+% \textbf{Chatbot for Worldcup} \hfill {\em \textit{2017 - 2018}}
+
+% \begin{itemize}
+%     \item A chatbot that help Zalo users get useful information during the height of World Cup 2018. Increasing user interaction with Zalo platform without relying on operation team.
+%     \item Built based on multiple Machine Learning model, utilizing hand-crafted knowledge and rule-based logic.
+%     \item \textit{Techstack}: 
+%     \begin{itemize}
+%             \item NLP: Sentence classification, NER, and typo correction. Python (gensim, scikit-learn)
+%             \item Backend : Java servlet
+%             \item Database: Neo4j (graph database)
+%             \item Web Crawler: real time information acquisition such as goal, match result, bet ratio - Python scrappy.
+%     \end{itemize}
+%     \item \textit{Impact}: The chatbot was well received by users as well as leadership team, resulting it and got heavily promoted by media/event team to public. Traffic to Zalo platform got increased by 50\%.
+% \end{itemize}
+
+% \newpage
+% \textbf{Feature Store} \hfill {\em \textit{2019 - 2023}}
+% \begin{itemize}
+%     \item An initiation to centralize features across different teams for storing, processing, and accessing commonly used features, promoting feature reusability, feature discovery.
+%     \item \textit{Techstack}:
+%     \begin{itemize}
+%         \item Backend: Java Servlet
+%         \item Data Pipeline and Big Data: Perform data extraction, transformation and ingestion.
+%         \begin{itemize}
+%             \item Scheduler: Python + Luigi 
+%             \item Data transformation: Scala Spark 
+%             \item Data Storage: Hadoop with Kerberos authentication.
+%         \end{itemize}
+%         \item MySQL as operational database and feature metadata.
+%         \item Git, Docker, Gitlab CI
+%     \end{itemize} 
+%     \item \textit{Impact}: Drastically reduce time spent on feature engineering. Feature Store has become standard integration for Data Insight team. 
+% \end{itemize}
+
+
+% \textbf{Pregnancy Prediction } \hfill {\em \textit{2021 - 2022}}
+% \begin{itemize}
+%     \item Predict whether a woman is pregnant. Served as analysis feature for downstream ads targeting campaign.
+%     \item \textit{Techstack}:
+%     \begin{itemize}
+%         \item Modeling: Python - lightgbm, numpy, pandas, matplotlib, pyspark
+%         \item Data Pipeline and Big Data: Run prediction on all Zalo user, then load into feature store. Python + luigi as scheduler, Scala (Spark), Hadoop for big data processing.
+%         \item Devops: git, docker gitlab CI
+%     \end{itemize} 
+%     \item \textit{Impact}: Use as feature for Milk Demand ads targeting, increase CR by 10-15\%.
+% \end{itemize}
+
+% \textbf{Lookalike} \hfill {\em \textit{2021 - 2022}}
+% \begin{itemize}
+%     \item Build lookalike audience with custom filter conditions from given audience. The project help user expands their exist audiences.
+%     \item \textit{Techstack}:
+%     \begin{itemize}
+%         \item Modeling: Python - lightgbm, numpy, pandas, matplotlib, pyspark
+%         \item Data Pipeline and Big Data: Retrain model monthly,  model inference with all Zalo user. Python - luigi scheduler, Scala (Spark), Hadoop, Kerberos
+%         \item Backend: receive inference requests from multiple platform. Java - Spring Boot
+%         \item Database: use as operational database, to store user requests and its status. Mongodb.
+%         \item Devops: git, docker gitlab CI
+%     \end{itemize} 
+%     \item \textit{Impact}: About 30-40 lookalike audiences generated monthly.
+% \end{itemize}
+
+
+% \textbf{AutoML} \hfill {\em \textit{2022 - 2024}}
+% \begin{itemize}
+%     \item A machine learning system, integrate with feature store, that automate the process of optimizing (ads) campaigns, designed to operate with minimal human intervention.
+%     \item \textit{Techstack}:
+%     \begin{itemize}
+%         \item Modeling: Python - lightgbm, autogluon, numpy, pandas, matplotlib, pyspark
+%         \item Visualize and reporting: Python - pandas, numpy, matplotlib, plotly, papermill, jupyter notebook
+%         \item Data Pipeline and Big Data: Retrain model monthly,  model inference with all Zalo user. Python - luigi scheduling, Scala (Spark), Hadoop, Kerberos
+%         \item Backend: receive inference requests from multiple platform. Java Servlet
+%         \item Database: use as operational database, Mongodb, MySql
+%         \item Devops: git, docker, gitlab CI
+%     \end{itemize} 
+%     \item \textit{Impact}: CR, CTR of ads campaigns increase from 25\% to 50\%. 
+%     \item Awarded The Outstanding Project in 2023.
+% \end{itemize}
 
 {\bf \underline{Backend Developer at ShareCarForAds.com}} \hfill {\em 2016 - 2017}\\
 - I worked as backend developer. I built backend service to help with data ingestion from IoT devices. 
